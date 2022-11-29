@@ -1,0 +1,30 @@
+services:
+  productsapi:
+    build:
+      context: C:\Users\pedro.caricari\source\repos\productsSale
+      dockerfile: productsApi\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: productsapi
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\pedro.caricari\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\pedro.caricari\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+  salesapi:
+    build:
+      context: C:\Users\pedro.caricari\source\repos\productsSale
+      dockerfile: salesApi\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: salesapi
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\pedro.caricari\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\pedro.caricari\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+version: '3.4'

@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  salesapi:
+    image: ${DOCKER_REGISTRY-}salesapi
+    build:
+      context: .
+      dockerfile: salesApi\Dockerfile
+
+  productsapi:
+    image: ${DOCKER_REGISTRY-}productsapi
+    build:
+      context: .
+      dockerfile: productsApi\Dockerfile
+
