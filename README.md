@@ -1,4 +1,4 @@
-# ms-kitchen
+# SalesApp
 
 Sales App, build with `.net`
 
@@ -18,11 +18,11 @@ useful for understanding how sales works
 
 ###  Sales Api
 
-![SalesApi](https://media.discordapp.net/attachments/810375634042748948/983775997876895754/Screen_Shot_2022-06-07_at_12.54.22.png?width=961&height=625)
+![SalesApi](https://media.discordapp.net/attachments/810375634042748948/1047112676377112626/image.png?width=960&height=237)
 
 ### Products Api
 
-![ProductsApi](https://media.discordapp.net/attachments/810375634042748948/983778791857979392/Screen_Shot_2022-06-07_at_13.05.29.png?width=961&height=625)
+![ProductsApi](https://media.discordapp.net/attachments/810375634042748948/1047112626146127944/image.png?width=960&height=320)
 
 ## Author
 
